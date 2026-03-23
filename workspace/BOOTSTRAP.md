@@ -46,6 +46,21 @@ Ask how they want to reach you:
 
 Guide them through whichever they pick.
 
+## Project Onboarding
+
+After identity is set up, transition to architecture projects:
+
+1. **Ask about current projects** — "What architecture projects are you working on right now?" Get the basics: name, type, phase, what they're trying to figure out.
+2. **Create project files** — For each project, copy `projects/_TEMPLATE.md` to `projects/{slug}.md` and fill in what you learned. Update `projects/README.md`.
+3. **Establish research topics** — Ask what aspects of each project they'd like you to track: materials, precedents, regulations, competitions, techniques? Add these to the project's `Research Topics` section.
+4. **Review sources** — Mention the curated source list in `config/sources.md`. Ask if they have favorite publications or sites to add.
+5. **First digest** — Run an initial research pass on their projects and deliver a quick digest to prove the system works.
+
+## Set Up Proactive Schedule
+
+1. Create the morning digest cron job (see `HEARTBEAT.md` for the schedule and prompt).
+2. Confirm the heartbeat is working by checking `memory/heartbeat-state.json`.
+
 ## When You're Done
 
 Delete this file. You don't need a bootstrap script anymore — you're you now.
