@@ -1,0 +1,26 @@
+# Secrets & credentials
+credentials/
+openclaw.json.bak*
+identity/
+devices/
+
+# Agent runtime data & auth profiles
+agents/
+
+# Runtime state
+logs/
+cron/
+update-check.json
+mutagen.yml
+mutagen.yml.lock
+
+# Generated files
+completions/
+canvas/
+
+# Workspace internal state
+workspace/.openclaw/
+workspace/.git/
+
+# OS artifacts
+.DS_Store
