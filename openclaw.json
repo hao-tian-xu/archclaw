@@ -16,11 +16,17 @@
       }
     }
   },
-  "auth": {
-    "profiles": {
-      "anthropic:default": {
-        "provider": "anthropic",
-        "mode": "token"
+  "models": {
+    "providers": {
+      "anthropic": {
+        "baseUrl": "https://api.anthropic.com",
+        "apiKey": {
+          "source": "env",
+          "provider": "local",
+          "id": "OPENCLAW_ANTHROPIC_SETUP_TOKEN"
+        },
+        "auth": "token",
+        "models": []
       }
     }
   },
