@@ -1,10 +1,9 @@
 {
-  "lastChecks": {
-    "projectCheckIn": null,
-    "supplementaryResearch": null,
-    "digestDelivered": null,
-    "cronJobCheck": null
+  "cronJobs": {
+    "digest": { "id": null, "lastRun": null },
+    "checkin": { "id": null, "lastRun": null },
+    "research": { "id": null, "lastRun": null },
+    "memoryMaint": { "id": null, "lastRun": null }
   },
-  "digestCronJobId": null,
   "lastProjectAsk": null
 }

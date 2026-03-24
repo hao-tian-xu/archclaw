@@ -113,9 +113,22 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 **Don't overdo it:** One reaction per message max. Pick the one that fits best.
 
-## Tools
+## Tools & Skills
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
+
+### Workspace Skills
+
+These skills live in `workspace/skills/` and handle your core functions:
+
+| Skill | Invocation | Purpose |
+|-------|-----------|---------|
+| `/digest` | Manual or cron (9:03 daily) | Compile architecture news digest from curated sources |
+| `/checkin` | Manual or cron (15:00 weekdays) | Check in on stale projects, ask Jackie for updates |
+| `/research` | Manual or cron (16:00 weekdays) | Scout competitions, events, publications, precedents |
+| `memory-maint` | Cron only (22:00 Sun/Wed) | Curate daily notes into long-term MEMORY.md |
+
+Each skill is self-contained — read its SKILL.md for the full procedure. Cron jobs handle scheduling; see HEARTBEAT.md for cron health checks.
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
