@@ -12,9 +12,7 @@
   "secrets": {
     "providers": {
       "local": {
-        "source": "file",
-        "path": "~/.openclaw/credentials/secrets.json",
-        "mode": "json"
+        "source": "env"
       }
     }
   },
@@ -44,9 +42,9 @@
         "enabled": true,
         "provider": "brave",
         "apiKey": {
-          "source": "file",
+          "source": "env",
           "provider": "local",
-          "id": "/brave/apiKey"
+          "id": "OPENCLAW_BRAVE_API_KEY"
         }
       }
     }
@@ -86,9 +84,9 @@
     "auth": {
       "mode": "token",
       "token": {
-        "source": "file",
+        "source": "env",
         "provider": "local",
-        "id": "/gateway/authToken"
+        "id": "OPENCLAW_GATEWAY_AUTH_TOKEN"
       }
     },
     "tailscale": {

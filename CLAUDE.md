@@ -60,7 +60,7 @@ When customizing the agent's files, keep these priorities in mind:
 ### Editing openclaw.json
 
 - Current model: `anthropic/claude-opus-4-6`. Tool profile: `coding`. Web search: Brave.
-- Secrets are referenced by path (e.g., `/brave/apiKey`) and resolved from `~/.openclaw/credentials/secrets.json`. Never inline secrets.
+- Secrets are resolved from environment variables (e.g., `OPENCLAW_BRAVE_API_KEY`, `OPENCLAW_GATEWAY_AUTH_TOKEN`). Never inline secrets.
 - The `hooks.internal.entries` block controls active built-in hooks (boot-md, session-memory, command-logger, bootstrap-extra-files).
 
 ### Git workflow
