@@ -9,6 +9,7 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 ## Structure
 
 ```
+├── .env.example               # Required env vars (copy to .env and fill in)
 ├── openclaw.json              # Runtime config (model, tools, secrets, hooks)
 ├── workspace/
 │   ├── AGENTS.md              # Operational rules, memory management
@@ -25,7 +26,6 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 │   │   └── _TEMPLATE.md       # Template for new project files
 │   ├── digests/               # Daily architecture news digests
 │   └── memory/                # Session logs and heartbeat state
-└── .context/                  # Scratch space (gitignored)
 ```
 
 ## Key Features
@@ -40,7 +40,7 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 
 ## Getting Started
 
-1. Review and adjust `openclaw.json` (model, secrets, tool profile).
+1. Copy `.env.example` to `.env` and fill in API keys. Review `openclaw.json` for model and tool settings.
 2. Pre-fill `workspace/USER.md` and `workspace/SOUL.md` if desired, or let the agent negotiate during bootstrap.
 3. Launch the OpenClaw agent. It reads `workspace/BOOTSTRAP.md` and walks through onboarding: adding projects, setting up digests, running initial research.
 4. `BOOTSTRAP.md` is deleted after first run.
