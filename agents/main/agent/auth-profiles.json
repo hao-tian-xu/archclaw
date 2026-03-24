@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "profiles": {
+    "anthropic:default": {
+      "type": "token",
+      "provider": "anthropic",
+      "token": "YOUR_ANTHROPIC_API_KEY"
+    }
+  }
+}

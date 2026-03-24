@@ -5,7 +5,12 @@ identity/
 devices/
 
 # Agent runtime data & auth profiles
-agents/
+agents/*
+!agents/main/
+agents/main/*
+!agents/main/agent/
+agents/main/agent/*
+!agents/main/agent/auth-profiles.json
 
 # Runtime state
 logs/
