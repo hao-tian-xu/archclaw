@@ -1,4 +1,5 @@
 # Secrets & credentials
+.env
 credentials/
 openclaw.json.bak*
 identity/
