@@ -3,6 +3,7 @@
     "digest": { "id": null, "lastRun": null },
     "checkin": { "id": null, "lastRun": null },
     "research": { "id": null, "lastRun": null },
+    "followup": { "id": null, "lastRun": null },
     "memoryMaint": { "id": null, "lastRun": null }
   },
   "lastProjectAsk": null

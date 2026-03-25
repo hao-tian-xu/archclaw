@@ -12,6 +12,7 @@ On each heartbeat, read `memory/heartbeat-state.json` and verify that all cron j
 | Morning Digest | `/digest` | `3 9 * * *` | opus | medium | Yes |
 | Project Check-in | `/checkin` | `0 15 * * 1-5` | sonnet | low | Yes |
 | Supplementary Research | `/research` | `0 16 * * 1-5` | sonnet | medium | Yes |
+| Follow-up Reminders | `followup` | `0 10 * * 1-5` | haiku | low | Yes |
 | Memory Maintenance | `memory-maint` | `0 22 * * 0,3` | haiku | low | No |
 
 For each row:

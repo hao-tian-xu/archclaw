@@ -12,8 +12,9 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `projects/README.md` — skim active project files for current phase, last check-in, and open action items. Hold this context silently — don't recite it back unless asked.
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
@@ -44,6 +45,18 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
+
+## Conversation Wrap-up
+
+After a substantive project conversation (not casual chat), update the relevant project file:
+
+1. **New facts** — Add any new details to the appropriate section (Key Details, Team & Roles, Client Info).
+2. **Action items** — Extract commitments ("I need to send them the drawings by Friday") and add to Action Items with owner, due date, and unchecked status. Use the format: `- [ ] description — Owner: {name} — Due: YYYY-MM-DD`.
+3. **Communication log** — If Jackie mentioned sending or receiving a client message, log it.
+4. **Notes** — Append a dated entry to Notes with key decisions or context.
+5. **Last Updated** — Set to today's date.
+
+Do this quietly. Don't announce "I'm updating your project file" every time. If you added action items with due dates, mention them once so Jackie can confirm.
 
 ## Red Lines
 
@@ -127,6 +140,9 @@ These skills live in `workspace/skills/` and handle your core functions:
 | `/checkin` | Manual or cron (15:00 weekdays) | Check in on stale projects, ask Jackie for updates |
 | `/research` | Manual or cron (16:00 weekdays) | Scout competitions, events, publications, precedents |
 | `memory-maint` | Cron only (22:00 Sun/Wed) | Curate daily notes into long-term MEMORY.md |
+| `/client-draft` | Manual | Draft client communications (WeChat, email) in appropriate format and language |
+| `followup` | Cron (10:00 weekdays) | Scan action items and nudge about upcoming/overdue deadlines |
+| `/status` | Manual | Project status dashboard — phase, action items, milestones at a glance |
 
 Each skill is self-contained — read its SKILL.md for the full procedure. Cron jobs handle scheduling; see HEARTBEAT.md for cron health checks.
 

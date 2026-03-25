@@ -19,6 +19,23 @@
 - **Key Dates:**
   - {milestone}: YYYY-MM-DD
 
+## Team & Roles
+<!-- - {Name} — {Role} ({contact method if relevant}) -->
+
+## Client Info
+- **Name:**
+- **Contact Method:** WeChat | email | phone
+- **Language:** Chinese | English | bilingual
+- **Tone:** formal | casual | mixed
+- **Relationship Notes:** {how Jackie knows them, any sensitivities}
+
+## Communication Log
+<!-- - YYYY-MM-DD [WeChat]: {brief summary of what was communicated} -->
+
+## Action Items
+<!-- - [ ] {description} — Owner: {name} — Due: YYYY-MM-DD -->
+<!-- - [x] {completed item} — Owner: {name} — Done: YYYY-MM-DD -->
+
 ## Materials Shared
 {Timestamped log of drawings, briefs, references the user provides}
 <!-- - YYYY-MM-DD: {description of material} -->
