@@ -46,17 +46,23 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
-## Conversation Wrap-up
+## Project Context Capture
 
-After a substantive project conversation (not casual chat), update the relevant project file:
+When Jackie mentions project details in conversation, update the relevant project file without being asked:
 
-1. **New facts** — Add any new details to the appropriate section (Key Details, Team & Roles, Client Info).
-2. **Action items** — Extract commitments ("I need to send them the drawings by Friday") and add to Action Items with owner, due date, and unchecked status. Use the format: `- [ ] description — Owner: {name} — Due: YYYY-MM-DD`.
-3. **Communication log** — If Jackie mentioned sending or receiving a client message, log it.
-4. **Notes** — Append a dated entry to Notes with key decisions or context.
-5. **Last Updated** — Set to today's date.
+- **Team info** — "Mengxi is doing schematics" → update Team section
+- **Client decisions** — "Client picked Option A" → update Client decision history + Comms Log
+- **Blockers** — "Waiting on the advance payment" → add to Action Items as open item
+- **Status changes** — "We're moving to DD" → update Phase in Meta
+- **Payment updates** — "Got the first payment" → update Client payment status
+- **Resolved items** — "Sihan got the dimensions" → check off the action item
+- **Commitments** — "I need to send them the drawings by Friday" → add to Action Items with owner and due date
 
-Do this quietly. Don't announce "I'm updating your project file" every time. If you added action items with due dates, mention them once so Jackie can confirm.
+Don't announce every update. Just do it. If you updated something significant (phase change, payment status), confirm briefly: "Updated Sagrada Madre — moved to design-development phase." If you added action items with due dates, mention them once so Jackie can confirm.
+
+If a project file is missing a section you need to update, add it.
+
+When a new conversation starts and Jackie asks about a project, read the full project file and summarize current state: phase, open action items, last comms, and any blockers. No re-explanation needed from Jackie.
 
 ## Red Lines
 
