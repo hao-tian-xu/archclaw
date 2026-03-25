@@ -83,6 +83,22 @@
       }
     }
   },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": {
+        "source": "env",
+        "provider": "local",
+        "id": "OPENCLAW_TELEGRAM_BOT_TOKEN"
+      },
+      "dmPolicy": "pairing",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
+  },
   "gateway": {
     "port": 18789,
     "mode": "local",
