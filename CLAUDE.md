@@ -48,6 +48,26 @@ When customizing the agent's files, keep these priorities in mind:
 - **USER.md** — Capture architectural interests, tech stack preferences, and project context
 - **AGENTS.md** — Add architecture-specific operational rules (e.g., design review workflows, documentation standards)
 
+## OpenClaw Documentation
+
+Two documentation sources are available — use them instead of guessing about OpenClaw behavior:
+
+### Official docs (https://docs.openclaw.dev)
+
+The canonical reference. Use `WebFetch` to read specific pages when you need authoritative, up-to-date information (e.g., config schema, API specs, changelog).
+
+### DeepWiki (AI-generated, repo: `openclaw/openclaw`)
+
+AI-indexed documentation derived from the OpenClaw source code. Useful for understanding internals, architecture, and implementation details. Access via MCP tools:
+
+- `mcp__deepwiki__read_wiki_structure` — browse available documentation topics
+- `mcp__deepwiki__read_wiki_contents` — read full documentation pages
+- `mcp__deepwiki__ask_question` — ask specific questions about OpenClaw
+
+Key topics for this workspace: **Gateway** (2.x), **Agent Runtime** (3.x), **Tools System** (3.4.x), **Skills System** (5.x), **Cron & Scheduled Jobs** (6.x), **Configuration** (2.3.x), **Secret Management** (10.3).
+
+Consult these docs when editing `openclaw.json`, workspace files, or adding new capabilities. Prefer DeepWiki for factual, code-grounded answers (it's derived from source code); use official docs for user-facing guides, tutorials, and changelog.
+
 ## Conventions
 
 ### Editing workspace files
