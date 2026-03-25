@@ -39,12 +39,14 @@ Do not confuse the two: when editing workspace files, you are writing *instructi
     ├── projects/
     │   ├── README.md       # Active project index
     │   └── _TEMPLATE.md    # Template for new project files
+    ├── knowledge/          # Domain knowledge reference files (materials, construction, cost, etc.)
     ├── digests/            # Daily architecture news digests (generated)
     ├── memory/             # Session logs and heartbeat state
     └── skills/             # Self-contained agent functions
         ├── digest/SKILL.md
         ├── checkin/SKILL.md
         ├── research/SKILL.md
+        ├── concept-explore/SKILL.md
         └── memory-maint/SKILL.md
 ```
 

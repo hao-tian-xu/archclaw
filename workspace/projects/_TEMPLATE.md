@@ -19,6 +19,16 @@
 - **Key Dates:**
   - {milestone}: YYYY-MM-DD
 
+## Constraints
+- **Budget tier:** low | medium | high | premium
+- **Construction timeline:** {duration, or "flexible"}
+- **Climate/environment:** {humidity, temperature, indoor/outdoor, exposure}
+- **Modularity requirements:** fixed | partially-modular | fully-modular
+- **Lifecycle expectation:** temporary (<2yr) | short (2–5yr) | medium (5–15yr) | long (15yr+)
+- **Regulatory:** {relevant codes, heritage restrictions, mall fit-out rules, fire codes}
+- **Sustainability targets:** {certification, client preferences, or "none specified"}
+- **Material restrictions:** {banned materials, required materials, client preferences}
+
 ## Team
 {Who's involved and what they do. Update as you learn from conversations.}
 <!-- - **{Name}:** {role/responsibility} — {availability/notes} -->

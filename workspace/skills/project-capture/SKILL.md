@@ -20,6 +20,14 @@ Continuously listen for project details in conversation and update the relevant 
 | Resolved items — "Sihan got the dimensions" | **Action Items** (check off) |
 | New contacts or preferences | **Client** → Contact / Communication style |
 | Key dates — "deadline is April 15" | **Key Details** → Key Dates |
+| Budget mentions — "We have 800k for this" | **Constraints** → Budget tier |
+| Timeline — "Needs to open by October" | **Constraints** → Construction timeline |
+| Material preferences — "Client wants no plastic" | **Constraints** → Material restrictions |
+| Environment — "It's an outdoor terrace" / "humid mall atrium" | **Constraints** → Climate/environment |
+| Duration — "This is a 2-year pop-up" | **Constraints** → Lifecycle expectation |
+| Sustainability — "They want LEED certified" | **Constraints** → Sustainability targets |
+| Regulations — "Heritage zone, can't change facade" | **Constraints** → Regulatory |
+| Modularity — "Must pack flat for transport" | **Constraints** → Modularity requirements |
 
 ## Steps
 
