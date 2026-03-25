@@ -1,7 +1,6 @@
 ---
 name: project-capture
 description: "Passively capture project details from conversation and keep project files up to date. Always-on — no manual invocation needed."
-trigger: passive
 ---
 
 # Project Context Capture

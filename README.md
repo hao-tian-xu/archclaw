@@ -30,7 +30,9 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 │       ├── digest/SKILL.md    # Daily architecture news digest
 │       ├── checkin/SKILL.md   # Project progress check-ins
 │       ├── research/SKILL.md  # Competition/event/publication scouting
-│       └── memory-maint/SKILL.md  # Long-term memory curation
+│       ├── memory-maint/SKILL.md  # Long-term memory curation
+│       ├── draft-message/SKILL.md # Client/collaborator message drafting
+│       └── project-capture/SKILL.md # Passive project context capture
 ```
 
 ## Key Features
@@ -45,6 +47,8 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 | `/checkin` | Weekdays 3 PM | Check in on the stalest project, ask for updates |
 | `/research` | Weekdays 4 PM | Scout competitions, events, publications, precedents |
 | `memory-maint` | Sun/Wed 10 PM | Curate daily notes into long-term MEMORY.md |
+| `/draft-message` | Manual | Draft tactful messages for clients or collaborators |
+| `project-capture` | Passive (always-on) | Auto-update project files from conversation context |
 
 **Memory** — Daily logs capture session context. Periodic maintenance distills them into long-term memory.
 
