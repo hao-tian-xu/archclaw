@@ -17,7 +17,7 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 │   ├── IDENTITY.md            # Name, vibe, emoji
 │   ├── USER.md                # Human user profile
 │   ├── TOOLS.md               # Environment notes
-│   ├── HEARTBEAT.md           # Periodic task schedule
+│   ├── HEARTBEAT.md           # Cron job health checks
 │   ├── BOOTSTRAP.md           # First-run onboarding (deleted after use)
 │   ├── config/
 │   │   └── sources.md         # Curated architecture news/journal sources
@@ -25,16 +25,26 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 │   │   ├── README.md          # Active project index
 │   │   └── _TEMPLATE.md       # Template for new project files
 │   ├── digests/               # Daily architecture news digests
-│   └── memory/                # Session logs and heartbeat state
+│   ├── memory/                # Session logs and heartbeat state
+│   └── skills/                # Self-contained agent functions
+│       ├── digest/SKILL.md    # Daily architecture news digest
+│       ├── checkin/SKILL.md   # Project progress check-ins
+│       ├── research/SKILL.md  # Competition/event/publication scouting
+│       └── memory-maint/SKILL.md  # Long-term memory curation
 ```
 
 ## Key Features
 
 **Project tracking** — Each architecture project gets a structured file (status, phase, research topics, findings). The agent checks in daily and logs discoveries.
 
-**Daily digests** — A morning cron job (9:03 AM local) searches curated sources for news relevant to active projects and compiles a digest.
+**Skills-based architecture** — Core functions are modularized as self-contained skills under `workspace/skills/`, each with its own SKILL.md. Cron jobs handle scheduling; HEARTBEAT.md monitors cron health.
 
-**Supplementary research** — During afternoon hours the agent searches for competition deadlines, events, and publications tied to tracked projects.
+| Skill | Schedule | What it does |
+|-------|----------|-------------|
+| `/digest` | Daily 9:03 AM | Search curated sources for project-relevant news, compile a digest |
+| `/checkin` | Weekdays 3 PM | Check in on the stalest project, ask for updates |
+| `/research` | Weekdays 4 PM | Scout competitions, events, publications, precedents |
+| `memory-maint` | Sun/Wed 10 PM | Curate daily notes into long-term MEMORY.md |
 
 **Memory** — Daily logs capture session context. Periodic maintenance distills them into long-term memory.
 

@@ -21,10 +21,9 @@ Do not confuse the two: when editing workspace files, you are writing *instructi
 ## Project Structure
 
 ```
-havana/                     # Git worktree from archclaw repo
-├── .git                    # Worktree ref -> archclaw/.openclaw/.git/worktrees/havana
+.openclaw/
+├── .git                    # Worktree ref
 ├── .gitignore              # Excludes credentials, logs, runtime state
-├── .context/               # Scratch space (notes.md, todos.md) - gitignored
 ├── openclaw.json           # Main config: model, secrets, tools, gateway, hooks
 ├── CLAUDE.md               # This file
 └── workspace/              # The OpenClaw agent's home directory
@@ -33,8 +32,20 @@ havana/                     # Git worktree from archclaw repo
     ├── IDENTITY.md         # Agent identity (name, creature, vibe, emoji)
     ├── USER.md             # Profile of the human user
     ├── TOOLS.md            # Local environment notes for the agent
-    ├── HEARTBEAT.md        # Periodic task checklist
-    └── BOOTSTRAP.md        # First-run script (presence = never bootstrapped)
+    ├── HEARTBEAT.md        # Cron job health checks
+    ├── BOOTSTRAP.md        # First-run script (presence = never bootstrapped)
+    ├── config/
+    │   └── sources.md      # Curated architecture news/journal sources
+    ├── projects/
+    │   ├── README.md       # Active project index
+    │   └── _TEMPLATE.md    # Template for new project files
+    ├── digests/            # Daily architecture news digests (generated)
+    ├── memory/             # Session logs and heartbeat state
+    └── skills/             # Self-contained agent functions
+        ├── digest/SKILL.md
+        ├── checkin/SKILL.md
+        ├── research/SKILL.md
+        └── memory-maint/SKILL.md
 ```
 
 ## Architecture Domain Focus
@@ -44,7 +55,8 @@ When customizing the agent's files, keep these priorities in mind:
 - **SOUL.md** — Emphasize systems-level reasoning, trade-off analysis, clear diagramming, structured communication
 - **IDENTITY.md** — Establish an architect persona
 - **TOOLS.md** — Include architecture-relevant tooling notes (diagramming tools, documentation generators, design review workflows)
-- **HEARTBEAT.md** — Schedule architecture-related periodic checks (project status, design doc reviews, dependency audits)
+- **HEARTBEAT.md** — Cron job health monitoring only; actual task logic lives in skills
+- **Skills (`workspace/skills/*/SKILL.md`)** — Each skill is a self-contained function. Edit the SKILL.md to change what the agent does; edit HEARTBEAT.md to change when/how it's scheduled
 - **USER.md** — Capture architectural interests, tech stack preferences, and project context
 - **AGENTS.md** — Add architecture-specific operational rules (e.g., design review workflows, documentation standards)
 
