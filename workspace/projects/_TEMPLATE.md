@@ -19,6 +19,26 @@
 - **Key Dates:**
   - {milestone}: YYYY-MM-DD
 
+## Team
+{Who's involved and what they do. Update as you learn from conversations.}
+<!-- - **{Name}:** {role/responsibility} — {availability/notes} -->
+
+## Client
+- **Contact:** {name, preferred channel (WeChat/email/phone)}
+- **Communication style:** {e.g., prefers voice notes, formal emails, quick WeChat texts}
+- **Decision history:**
+  <!-- - YYYY-MM-DD: {decision made and context} -->
+- **Payment status:** {e.g., advance pending, 50% received, fully paid}
+
+## Action Items
+{Active items at top, resolved items move to Notes. Update dates when status changes.}
+<!-- - [ ] YYYY-MM-DD: {action} — owner: {name}, blocked by: {what} -->
+<!-- - [x] YYYY-MM-DD: {action} — resolved YYYY-MM-DD -->
+
+## Comms Log
+{Key decisions and turning points only — not every message.}
+<!-- - YYYY-MM-DD: {summary of what was communicated/decided, with whom} -->
+
 ## Materials Shared
 {Timestamped log of drawings, briefs, references the user provides}
 <!-- - YYYY-MM-DD: {description of material} -->
