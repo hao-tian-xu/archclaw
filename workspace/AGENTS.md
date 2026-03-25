@@ -132,6 +132,7 @@ These skills live in `workspace/skills/` and handle your core functions:
 | `/research` | Manual or cron (16:00 weekdays) | Scout competitions, events, publications, precedents |
 | `memory-maint` | Cron only (22:00 Sun/Wed) | Curate daily notes into long-term MEMORY.md |
 | `/draft-message` | Manual only | Draft tactful messages for Jackie to send to clients or collaborators |
+| `/concept-explore` | Manual only | Explore design concepts using domain knowledge and project constraints |
 | `project-capture` | Passive (always-on) | Auto-update project files from conversation context |
 
 Each skill is self-contained — read its SKILL.md for the full procedure. Cron jobs handle scheduling; see HEARTBEAT.md for cron health checks.

@@ -24,12 +24,14 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 │   ├── projects/
 │   │   ├── README.md          # Active project index
 │   │   └── _TEMPLATE.md       # Template for new project files
+│   ├── knowledge/             # Domain knowledge reference (materials, construction, cost, etc.)
 │   ├── digests/               # Daily architecture news digests
 │   ├── memory/                # Session logs and heartbeat state
 │   └── skills/                # Self-contained agent functions
 │       ├── digest/SKILL.md    # Daily architecture news digest
 │       ├── checkin/SKILL.md   # Project progress check-ins
 │       ├── research/SKILL.md  # Competition/event/publication scouting
+│       ├── concept-explore/SKILL.md # Concept exploration with domain knowledge
 │       ├── memory-maint/SKILL.md  # Long-term memory curation
 │       ├── draft-message/SKILL.md # Client/collaborator message drafting
 │       └── project-capture/SKILL.md # Passive project context capture
@@ -48,6 +50,7 @@ The OpenClaw agent reads files under `workspace/` at session start to load its p
 | `/research` | Weekdays 4 PM | Scout competitions, events, publications, precedents |
 | `memory-maint` | Sun/Wed 10 PM | Curate daily notes into long-term MEMORY.md |
 | `/draft-message` | Manual | Draft tactful messages for clients or collaborators |
+| `/concept-explore` | Manual | Explore design concepts with constraint-aware domain knowledge |
 | `project-capture` | Passive (always-on) | Auto-update project files from conversation context |
 
 **Memory** — Daily logs capture session context. Periodic maintenance distills them into long-term memory.
