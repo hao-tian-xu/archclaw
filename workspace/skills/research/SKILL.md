@@ -13,7 +13,7 @@ Scout for competitions, events, and publications relevant to Jackie's active pro
 2. **Load sources** — Read `workspace/config/sources.md`, focusing on Competitions, Materials & Technology, and Research & Theory sections.
 3. **Per project** — For each active project:
    - Read its project file to get Research Topics, Type, and Phase.
-   - Search for:
+   - Search in both English and the user's preferred language (from `USER.md`) for:
      - **Competition deadlines** — open competitions matching the project type or research topics.
      - **Events** — exhibitions, lectures, conferences relevant to the project.
      - **Publications** — new papers, books, articles on the research topics.
@@ -29,6 +29,8 @@ Scout for competitions, events, and publications relevant to Jackie's active pro
 
 ## Guidelines
 
+- Log all findings in **English**. Preserve proper nouns and culturally specific terms in their original language in parentheses.
+- When notifying the user proactively (cron), translate into their language preference from `USER.md`.
 - Avoid duplicating findings already in the Findings Log.
 - Competition deadlines are highest priority — always flag these.
 - Prefer depth on 1-2 projects over shallow coverage of all.

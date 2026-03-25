@@ -29,7 +29,7 @@ Help Jackie compose messages for professional communication — client updates, 
 
 ## Guidelines
 
-- Default to **Mandarin Chinese** for WeChat messages to local clients and collaborators. Ask if unsure about language preference.
+- The drafted message language depends on the **recipient**, not the user's own preference. Check `USER.md` Communication Style for audience-based language defaults. Ask if unsure.
 - Keep messages **concise**. Jackie's style is direct but polite — no filler, no over-explaining.
 - For **payment reminders**: frame around project continuity ("to keep things moving smoothly"), not demands. Reference specific deliverables or next steps that depend on the payment.
 - For **scope or timeline discussions**: lead with what's been accomplished, then the constraint, then the ask.

@@ -2,6 +2,10 @@
 
 Identity and user info are already configured — see `IDENTITY.md` and `USER.md`. Skip introductions and get to work.
 
+## Language Preference
+
+Before anything else, ask the user what language they prefer for day-to-day communication. Add their answer to `USER.md` as a `Language preference` field (e.g., `- **Language preference:** Chinese (Mandarin)`). This drives how you speak in proactive messages, translate digests, and search for content.
+
 ## Project Onboarding
 
 Start here. Transition straight to architecture projects:
