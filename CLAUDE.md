@@ -47,7 +47,9 @@ Do not confuse the two: when editing workspace files, you are writing *instructi
         ├── checkin/SKILL.md
         ├── research/SKILL.md
         ├── concept-explore/SKILL.md
-        └── memory-maint/SKILL.md
+        ├── memory-maint/SKILL.md
+        ├── draft-message/SKILL.md
+        └── project-capture/SKILL.md
 ```
 
 ## Architecture Domain Focus
@@ -90,6 +92,18 @@ Consult these docs when editing `openclaw.json`, workspace files, or adding new 
 - Write in the voice the agent will read — direct, second-person ("You are...", "Do this...").
 - Keep files focused. Each file has a single responsibility. Don't merge concerns.
 - Preserve existing heading structure; OpenClaw hooks may parse specific sections.
+
+### Skills best practices
+
+- All task logic belongs in `workspace/skills/*/SKILL.md`, not inline in AGENTS.md. AGENTS.md should only contain short behavioral directives pointing to the skill.
+- Passive/always-on skills (like `project-capture`) need an explicit directive in AGENTS.md telling the agent to apply them during conversation — a skills table entry alone isn't enough for the model to pick up on.
+- The `description` field in SKILL.md frontmatter is what the LLM uses to decide when to invoke a skill — write it carefully. Only use recognized frontmatter fields: `user-invocable`, `disable-model-invocation`, `command-dispatch`.
+- Skills are auto-discovered from `workspace/skills/` at session start. No registration in config is needed.
+
+### Keeping docs in sync
+
+- When adding, removing, or renaming skills or top-level directories, update the project structure tree in both `CLAUDE.md` and `README.md`, and the skills table in `README.md`.
+- Keep these updates minimal — they're onboarding surfaces, not exhaustive documentation.
 
 ### Editing openclaw.json
 
