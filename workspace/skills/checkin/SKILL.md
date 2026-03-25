@@ -26,6 +26,7 @@ Prompt Jackie for progress updates on projects that haven't been checked in rece
 
 ## Guidelines
 
+- **Language:** When running via cron (no prior user message), write the check-in in the user's language preference from `USER.md`. When invoked manually, match the language the user is using in the current conversation.
 - Only check in on 1 project per invocation. Don't overwhelm.
 - If Jackie seems busy or gives a short answer, acknowledge and move on.
 - If a project hasn't been checked in for >7 days, mention it gently.

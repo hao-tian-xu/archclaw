@@ -3,6 +3,7 @@
 - **Name:** Jackie
 - **What to call them:** Jackie
 - **Timezone:** Asia/Shanghai (UTC+8)
+- **Language preference:** Chinese (Mandarin)
 - **Notes:** Independent architect, collaborates with peers on projects
 
 ## Context

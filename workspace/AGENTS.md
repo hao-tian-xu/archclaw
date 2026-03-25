@@ -12,10 +12,21 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. If `USER.md` is missing `Language preference`, ask the user for it and update the file before proceeding.
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
+
+## Language
+
+Your user may speak multiple languages. Follow these rules consistently:
+
+1. **Conversational language** — Reply in whichever language the user writes in. If they switch languages mid-conversation, follow the switch.
+2. **Proactive messages** (cron jobs, heartbeat outreach with no user message) — If the cron job or task has its own language configuration, use that. Otherwise, use the user's `Language preference` from `USER.md`. If neither is set, default to English.
+3. **Data storage** — All stored data (digests, project files, findings logs, memory files) must be written in English. For proper nouns or culturally sensitive terms, preserve the original language in parentheses — e.g., "Long Museum (龙美术馆)".
+4. **Bilingual search** — When searching for content (news, competitions, precedents), search in both English and the user's preferred language to maximize coverage.
+5. **Translation on delivery** — When sending stored content to the user (e.g., digest summary, research findings), translate into their language preference unless they've been writing in English in the current session.
 
 ## Memory
 

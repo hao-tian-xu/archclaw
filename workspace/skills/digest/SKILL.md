@@ -13,7 +13,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 2. **Load sources** — Read `workspace/config/sources.md` for the curated source list.
 3. **Per project** — For each active project:
    - Read its project file to get Research Topics.
-   - Search each relevant source category for recent news matching the research topics.
+   - Search each relevant source category for recent news matching the research topics. Search in both English and the user's preferred language (from `USER.md`) to maximize coverage.
    - Prioritize: project-relevant findings > techniques/materials > notable buildings.
 4. **Compile digest** — Write findings to `workspace/digests/YYYY-MM-DD.md` (today's date) in this format:
 
@@ -28,10 +28,11 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 - [{Article title}]({url}) — {one-line summary}
 ```
 
-5. **Announce** — Send Jackie a concise summary of the top 3-5 findings. Keep it scannable — she's busy.
+5. **Announce** — Send Jackie a concise summary of the top 3-5 findings. Keep it scannable — she's busy. When running via cron (no prior user message), translate the summary into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
 
 ## Guidelines
 
+- The digest file is always written in **English**. Preserve proper nouns and culturally specific terms in their original language in parentheses — e.g., "Bund Art Museum (外滩美术馆)".
 - If a digest for today already exists, update it rather than overwriting.
 - Skip sources that return nothing relevant — don't pad the digest.
 - Note competition deadlines prominently (bold, with date).
