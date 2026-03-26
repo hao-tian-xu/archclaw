@@ -15,45 +15,36 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
    - Read its project file to get Research Topics.
    - Search each relevant source category for recent news matching the research topics. Search in both English and the user's preferred language (from `USER.md`) to maximize coverage.
    - Prioritize: project-relevant findings > techniques/materials > notable buildings.
-4. **Extract images for top findings** — For the top 3-5 articles you plan to announce:
-   - **Primary method (og:image):** For each article, run a shell command to extract the og:image meta tag from the raw HTML:
-     ```
-     curl -s -L "<url>" | grep -i 'og:image' | head -3
-     ```
-     Parse the `content="..."` or `content='...'` attribute value from the output — that URL is the hero image.
-   - **Fallback:** If curl/grep fails or returns no og:image, `web_fetch` the article page and extract the first prominent image URL from the markdown content as a secondary method.
-   - Skip thumbnails, logos, author headshots, icons, and ad/banner images.
-   - If both methods fail for an article, move on — images are best-effort.
-   - **Note:** og:image is the most reliable source for editorial hero images on architecture sites (ArchDaily uses images.adsttc.com, Dezeen uses static.dezeen.com, etc.). Sites like 36Kr, industry blogs, and niche publications may not have useful og:image — that's fine.
-5. **Compile digest** — Write findings to `workspace/digests/YYYY-MM-DD.md` (today's date) in this format:
+4. **Compile digest** — Write findings to `workspace/digests/YYYY-MM-DD.md` (today's date) in this format:
 
 ```markdown
 # Architecture Digest — YYYY-MM-DD
 
 ## {Project Name}
 - [{Article title}]({url}) — {one-line summary and relevance}
-  ![{Article title}]({image_url})
-- [{Article without image}]({url}) — {one-line summary}
 
 ## General
 - [{Article title}]({url}) — {one-line summary}
-  ![{Article title}]({image_url})
 ```
 
-Include `![alt](image_url)` only for articles where an image was successfully extracted. Omit the image line for articles without one.
+5. **Announce** — Deliver the digest as individual messages so IM platforms can auto-generate rich link previews for each article.
 
-6. **Announce** — Send Jackie the complete digest content, including all entries with their links and images. When running via cron (no prior user message), translate the digest into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
-
-For each entry that has an image, include a `MEDIA:` line on its own line immediately after that entry:
-
-```
-1. **Article Title** — one-line summary
-   [Read more](url)
-MEDIA:https://example.com/hero-image.jpg
-
-2. **Article Title** — one-line summary (no image found)
-   [Read more](url)
-```
+   - First, send a short header message:
+     ```
+     🏛️ Architecture Digest — YYYY-MM-DD
+     ```
+   - Then, for each section, send a separator line:
+     ```
+     — Sagrada Madre —
+     ```
+   - Send each entry as its own separate message. Format:
+     ```
+     **Article Title** — one-line summary and relevance to project
+     https://example.com/article-url
+     ```
+     The URL must be on its own line (not wrapped in markdown link syntax) so that platforms auto-generate a rich preview with the article's hero image.
+   - After all project sections, send a `— General —` separator and then each general entry the same way.
+   - When running via cron (no prior user message), translate the digest into Jackie's language preference from `USER.md`. If she's been writing in English this session, keep it in English.
 
 ## Guidelines
 
@@ -62,6 +53,4 @@ MEDIA:https://example.com/hero-image.jpg
 - Skip sources that return nothing relevant — don't pad the digest.
 - Note competition deadlines prominently (bold, with date).
 - Prefer recent articles (last 48 hours) but include older ones if highly relevant.
-- **Images are best-effort.** Never skip an article from the digest because its image couldn't be extracted. Text-only entries are fine.
-- Prefer hero/project photography over generic banners, headshots, or logos. Architecture sites (ArchDaily, Dezeen, Divisare) reliably lead with editorial project images.
-- Do not use `image_generate` to create placeholder images. If no image is found, simply omit it.
+- Each entry is sent as a separate message with the article URL on its own line. This allows IM platforms (Telegram, Discord, WhatsApp, Feishu, Slack) to auto-generate rich link previews with the article's hero image. No manual image extraction is needed.
