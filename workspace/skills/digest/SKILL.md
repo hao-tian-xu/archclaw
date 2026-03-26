@@ -16,10 +16,15 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
    - Search each relevant source category for recent news matching the research topics. Search in both English and the user's preferred language (from `USER.md`) to maximize coverage.
    - Prioritize: project-relevant findings > techniques/materials > notable buildings.
 4. **Extract images for top findings** — For the top 3-5 articles you plan to announce:
-   - `web_fetch` each article page.
-   - Extract the first prominent image URL from the fetched content — this is typically the hero image (building render, project photo, site plan).
-   - Skip thumbnails, logos, author headshots, icons, and ad/banner images. Look for large editorial images from the article content.
-   - If extraction fails for an article, move on — images are best-effort.
+   - **Primary method (og:image):** For each article, run a shell command to extract the og:image meta tag from the raw HTML:
+     ```
+     curl -s -L "<url>" | grep -i 'og:image' | head -3
+     ```
+     Parse the `content="..."` or `content='...'` attribute value from the output — that URL is the hero image.
+   - **Fallback:** If curl/grep fails or returns no og:image, `web_fetch` the article page and extract the first prominent image URL from the markdown content as a secondary method.
+   - Skip thumbnails, logos, author headshots, icons, and ad/banner images.
+   - If both methods fail for an article, move on — images are best-effort.
+   - **Note:** og:image is the most reliable source for editorial hero images on architecture sites (ArchDaily uses images.adsttc.com, Dezeen uses static.dezeen.com, etc.). Sites like 36Kr, industry blogs, and niche publications may not have useful og:image — that's fine.
 5. **Compile digest** — Write findings to `workspace/digests/YYYY-MM-DD.md` (today's date) in this format:
 
 ```markdown
