@@ -28,7 +28,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 - [{Article title}]({url}) — {one-line summary}
 ```
 
-5. **Announce** — Send Jackie a concise summary of the top 3-5 findings. Keep it scannable — she's busy. When running via cron (no prior user message), translate the summary into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
+5. **Announce** — Send Jackie the complete digest content, including all entries with their links. When running via cron (no prior user message), translate the digest into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
 
 ## Guidelines
 
