@@ -92,6 +92,7 @@ Consult these docs when editing `openclaw.json`, workspace files, or adding new 
 - Write in the voice the agent will read — direct, second-person ("You are...", "Do this...").
 - Keep files focused. Each file has a single responsibility. Don't merge concerns.
 - Preserve existing heading structure; OpenClaw hooks may parse specific sections.
+- Respect markdown heading hierarchy. Content that belongs to a parent section (e.g., `## Cron Job Health`) must not end up visually nested under a child subsection (e.g., `### Morning Digest`). When inserting new subsections, make sure surrounding content stays scoped to the correct heading level.
 
 ### Skills best practices
 
