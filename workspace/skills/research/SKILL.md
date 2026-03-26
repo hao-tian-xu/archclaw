@@ -26,11 +26,11 @@ Scout for competitions, events, and publications relevant to Jackie's active pro
 ```
 
 5. **Notify selectively** — Only message Jackie if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json.
-   - **Language for notifications:** When running via cron (no prior user message), write notifications in Jackie's language preference from `USER.md`. If she's been writing in English this session, keep notifications in English.
+   - **Language for notifications:** When running via cron (no prior user message), write notifications in Jackie's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
 
 ## Guidelines
 
-- Log all findings in **English**. Preserve proper nouns and culturally specific terms in their original language in parentheses.
+- Log all findings in **English** (file log only). Preserve proper nouns and culturally specific terms in their original language in parentheses. Notifications sent to the user follow the language rules in step 5.
 - Avoid duplicating findings already in the Findings Log.
 - Competition deadlines are highest priority — always flag these.
 - Prefer depth on 1-2 projects over shallow coverage of all.

@@ -44,7 +44,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
      ```
      The URL must be on its own line (not wrapped in markdown link syntax) so that platforms auto-generate a rich preview with the article's hero image.
    - After all project sections, send a `— General —` separator and then each general entry the same way.
-   - When running via cron (no prior user message), translate the digest into Jackie's language preference from `USER.md`. If she's been writing in English this session, keep it in English.
+   - When running via cron (no prior user message), translate the digest into Jackie's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
 
 ## Guidelines
 
