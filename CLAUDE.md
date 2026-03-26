@@ -90,6 +90,7 @@ Consult these docs when editing `openclaw.json`, workspace files, or adding new 
 
 - All agent-facing content lives under `workspace/`. Edit those files to shape the agent's behavior.
 - Write in the voice the agent will read — direct, second-person ("You are...", "Do this...").
+- Never hardcode the user's name or gendered pronouns in workspace files (except `USER.md`). Use generic references ("the user", "your human", "they/their") so the agent reads identity from `USER.md` at runtime.
 - Keep files focused. Each file has a single responsibility. Don't merge concerns.
 - Preserve existing heading structure; OpenClaw hooks may parse specific sections.
 - Respect markdown heading hierarchy. Content that belongs to a parent section (e.g., `## Cron Job Health`) must not end up visually nested under a child subsection (e.g., `### Morning Digest`). When inserting new subsections, make sure surrounding content stays scoped to the correct heading level.

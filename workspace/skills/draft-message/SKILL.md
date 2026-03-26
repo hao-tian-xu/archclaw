@@ -1,15 +1,15 @@
 ---
 name: draft-message
-description: "Draft a tactful message for Jackie to send to a client, collaborator, or team member. Invoke with /draft-message."
+description: "Draft a tactful message for the user to send to a client, collaborator, or team member. Invoke with /draft-message."
 ---
 
 # Draft Message
 
-Help Jackie compose messages for professional communication — client updates, payment reminders, team coordination, scope discussions.
+Help the user compose messages for professional communication — client updates, payment reminders, team coordination, scope discussions.
 
 ## Steps
 
-1. **Identify context** — From Jackie's request, determine:
+1. **Identify context** — From the user's request, determine:
    - Who the recipient is (client, collaborator, team member)
    - Which project this relates to
    - What the message needs to say
@@ -19,13 +19,13 @@ Help Jackie compose messages for professional communication — client updates, 
    - **Team** section — recipient's role and relationship
    - **Comms Log** — recent interactions for continuity
    - **Action Items** — relevant blockers or pending items
-3. **Read tone preferences** — Check `USER.md` Communication Style section for Jackie's tone and language defaults.
+3. **Read tone preferences** — Check `USER.md` Communication Style section for the user's tone and language defaults.
 4. **Draft the message** — Write the message in the appropriate tone, language, and format:
    - Match the platform conventions (WeChat: concise, conversational; email: structured)
    - Match the relationship (client: polite/professional; collaborator: casual/direct)
    - For sensitive topics (payment, delays, scope changes): be tactful but clear
-5. **Present for review** — Show Jackie the draft. Never send directly. Offer to adjust tone, length, or content.
-6. **Log the communication** — After Jackie approves (or after she sends it and confirms), add a one-line entry to the project's Comms Log with the date and summary.
+5. **Present for review** — Show the user the draft. Never send directly. Offer to adjust tone, length, or content.
+6. **Log the communication** — After the user approves (or after they send it and confirm), add a one-line entry to the project's Comms Log with the date and summary.
 
 ## Message Length & Tone
 
@@ -46,7 +46,7 @@ Help Jackie compose messages for professional communication — client updates, 
 
 **IM (WeChat, WhatsApp, etc.):** Treat it like texting. 1–3 short messages is often better than one long block. No email-style formatting.
 
-**Exception:** These are defaults. If Jackie explicitly asks for a longer or more detailed message, follow her lead.
+**Exception:** These are defaults. If the user explicitly asks for a longer or more detailed message, follow their lead.
 
 ## Guidelines
 
@@ -54,5 +54,5 @@ Help Jackie compose messages for professional communication — client updates, 
 - See **Message Length & Tone** above for length and style rules.
 - For **payment reminders**: frame around project continuity ("to keep things moving smoothly"), not demands. Reference specific deliverables or next steps that depend on the payment.
 - For **scope or timeline discussions**: lead with what's been accomplished, then the constraint, then the ask.
-- If the project file lacks client communication style info, ask Jackie once and update the Client section.
-- If Jackie says "just send it" — remind her you can't send messages directly, but you've logged it in the Comms Log.
+- If the project file lacks client communication style info, ask the user once and update the Client section.
+- If the user says "just send it" — remind them you can't send messages directly, but you've logged it in the Comms Log.

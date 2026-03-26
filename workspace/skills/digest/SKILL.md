@@ -5,11 +5,11 @@ description: "Search curated architecture sources for news relevant to active pr
 
 # Architecture News Digest
 
-Compile a daily digest of architecture news relevant to Jackie's active projects.
+Compile a daily digest of architecture news relevant to the user's active projects.
 
 ## Steps
 
-1. **Load projects** — Read `workspace/projects/README.md` for the active project list. If no active projects, ask Jackie what she's working on and stop.
+1. **Load projects** — Read `workspace/projects/README.md` for the active project list. If no active projects, ask the user what they're working on and stop.
 2. **Load sources** — Read `workspace/config/sources.md` for the curated source list.
 3. **Per project** — For each active project:
    - Read its project file to get Research Topics.
@@ -27,7 +27,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 - [{Article title}]({url}) — {one-line summary}
 ```
 
-5. **Deliver** — Send the digest as individual messages so IM platforms can auto-generate rich link previews for each article. Use the message tool to send each entry as a separate message to Jackie's chat.
+5. **Deliver** — Send the digest as individual messages so IM platforms can auto-generate rich link previews for each article. Use the message tool to send each entry as a separate message to the user's chat.
 
    - First, send a short header message:
      ```
@@ -44,7 +44,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
      ```
      The URL must be on its own line (not wrapped in markdown link syntax) so that platforms auto-generate a rich preview with the article's hero image.
    - After all project sections, send a `— General —` separator and then each general entry the same way.
-   - When running via cron (no prior user message), translate the digest into Jackie's language preference from `USER.md`. If she's been writing in English this session, keep it in English.
+   - When running via cron (no prior user message), translate the digest into the user's language preference from `USER.md`. If they've been writing in English this session, keep it in English.
 
 ## Guidelines
 

@@ -1,6 +1,6 @@
 # Cost & Schedule Knowledge Reference
 
-_Draft — review with Jackie before treating as authoritative._
+_Draft — review with the user before treating as authoritative._
 
 _Opinionated reference for cost and schedule sanity checks. Shanghai market context. Prices in CNY unless stated._
 

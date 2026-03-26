@@ -1,6 +1,6 @@
 # Construction Methods Knowledge Reference
 
-_Draft — review with Jackie before treating as authoritative._
+_Draft — review with the user before treating as authoritative._
 
 _Opinionated reference for feasibility assessment. Focused on what's buildable within real constraints — timeline, budget, skill availability._
 
