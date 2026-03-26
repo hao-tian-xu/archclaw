@@ -7,19 +7,31 @@
 
 On each heartbeat, read `memory/heartbeat-state.json` and verify that all cron jobs exist. Cron jobs auto-expire after 3 days — recreate any that are missing.
 
-| Function | Skill | Schedule | Model | Thinking | Announce |
-|----------|-------|----------|-------|----------|----------|
-| Morning Digest | `/digest` | `3 9 * * *` | opus | medium | Yes |
-| Project Check-in | `/checkin` | `0 15 * * 1-5` | sonnet | low | Yes |
-| Supplementary Research | `/research` | `0 16 * * 1-5` | sonnet | medium | Yes |
-| Memory Maintenance | `memory-maint` | `0 22 * * 0,3` | haiku | low | No |
+| Function | Skill | Schedule | Model | Thinking | Session Target | Announce |
+|----------|-------|----------|-------|----------|----------------|----------|
+| Morning Digest | `/digest` | `3 9 * * *` | — | — | main | No |
+| Project Check-in | `/checkin` | `0 15 * * 1-5` | sonnet | low | isolated | Yes |
+| Supplementary Research | `/research` | `0 16 * * 1-5` | sonnet | medium | isolated | Yes |
+| Memory Maintenance | `memory-maint` | `0 22 * * 0,3` | haiku | low | isolated | No |
 
 For each row:
 1. Check if `cronJobs.{name}.id` in heartbeat-state.json is non-null and the job still exists.
-2. If missing, recreate the cron job with the schedule and settings above. The cron prompt should invoke the corresponding skill.
+2. If missing, recreate the cron job with the schedule and settings above. The cron prompt should invoke the corresponding skill. For isolated jobs, the prompt goes in `payload.message`; for main jobs, the prompt goes in `payload.text`.
 3. Update `cronJobs.{name}.id` with the new job ID.
 
 If all jobs are healthy and nothing else needs attention, reply HEARTBEAT_OK.
+
+### Morning Digest — why `main` session target
+
+The digest skill sends each article as a separate message so IM platforms generate rich link previews per article. The `--announce` delivery path only supports a single summary message, which collapses all articles into one wall of text.
+
+By using `sessionTarget: "main"` with `payload.kind: "systemEvent"`, the cron event is processed during a heartbeat turn where you have full tool access — including the message tool. This lets you send each article individually to Jackie's chat. The main session model (opus) is used automatically; Model/Thinking columns don't apply.
+
+When creating this job, set:
+- `sessionTarget: "main"`
+- `payload: { kind: "systemEvent", text: "Run /digest" }`
+- `wakeMode: "now"`
+- No `delivery` block (not needed — you deliver via the message tool yourself)
 
 ## Edge Cases
 - If a cron fires during quiet hours, defer the action to the next appropriate window.

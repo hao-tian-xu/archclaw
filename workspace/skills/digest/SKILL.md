@@ -27,7 +27,7 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 - [{Article title}]({url}) — {one-line summary}
 ```
 
-5. **Announce** — Deliver the digest as individual messages so IM platforms can auto-generate rich link previews for each article.
+5. **Deliver** — Send the digest as individual messages so IM platforms can auto-generate rich link previews for each article. Use the message tool to send each entry as a separate message to Jackie's chat.
 
    - First, send a short header message:
      ```
