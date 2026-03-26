@@ -37,9 +37,9 @@ Compile a daily digest of architecture news relevant to Jackie's active projects
 
 Include `![alt](image_url)` only for articles where an image was successfully extracted. Omit the image line for articles without one.
 
-6. **Announce** — Send Jackie a concise summary of the top 3-5 findings with images. Keep it scannable — she's busy. When running via cron (no prior user message), translate the summary into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
+6. **Announce** — Send Jackie the complete digest content, including all entries with their links and images. When running via cron (no prior user message), translate the digest into her language preference from `USER.md`. If she's been writing in English this session, keep it in English.
 
-For each announced finding that has an image, include a `MEDIA:` line on its own line immediately after that finding:
+For each entry that has an image, include a `MEDIA:` line on its own line immediately after that entry:
 
 ```
 1. **Article Title** — one-line summary

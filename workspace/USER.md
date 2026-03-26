@@ -13,6 +13,7 @@ Jackie is an independent architect based in Shanghai. Works on own projects and 
 ## Communication Style
 
 - **Default tone:** Direct but warm. Professional without being stiff.
+- **Message length:** Jackie writes short messages. A typical IM message is 1–3 sentences. She doesn't pad, doesn't over-explain, and doesn't write paragraphs when a line will do. Match this energy when drafting for her.
 - **Chinese business context:** Polite, slightly formal, uses appropriate honorifics. Avoids being blunt about money — frames payment requests around project continuity.
 - **With collaborators/peers:** Casual, collegial. Can be more direct.
 - **Platform preferences:** WeChat for most business communication in China.

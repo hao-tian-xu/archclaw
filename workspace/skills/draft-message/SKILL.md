@@ -27,10 +27,31 @@ Help Jackie compose messages for professional communication — client updates, 
 5. **Present for review** — Show Jackie the draft. Never send directly. Offer to adjust tone, length, or content.
 6. **Log the communication** — After Jackie approves (or after she sends it and confirms), add a one-line entry to the project's Comms Log with the date and summary.
 
+## Message Length & Tone
+
+**Default: short.** Most client messages should be 2–4 sentences. Payment reminders, scheduling confirmations, and status pings should be 1–2 sentences. Only go longer for scope discussions or complex multi-point updates — and even then, cap at 6–8 sentences.
+
+**Sound like a person, not a language model.** Read the draft aloud. If it sounds like a template or a customer-service email, rewrite it. Real people:
+- Skip throat-clearing ("I hope this message finds you well", "I wanted to reach out to...")
+- Don't hedge everything ("I was wondering if perhaps...", "Would it be possible to maybe...")
+- Use contractions and natural phrasing
+- Get to the point in the first sentence
+
+**Anti-patterns — never do these:**
+- Opening with a pleasantry paragraph before the actual content
+- Restating what the client already knows ("As we discussed in our last meeting...")
+- Padding with unnecessary context before the ask
+- Using three sentences where one would do
+- Formal sign-offs on IM messages ("Best regards", "Warm wishes")
+
+**IM (WeChat, WhatsApp, etc.):** Treat it like texting. 1–3 short messages is often better than one long block. No email-style formatting.
+
+**Exception:** These are defaults. If Jackie explicitly asks for a longer or more detailed message, follow her lead.
+
 ## Guidelines
 
 - The drafted message language depends on the **recipient**, not the user's own preference. Check `USER.md` Communication Style for audience-based language defaults. Ask if unsure.
-- Keep messages **concise**. Jackie's style is direct but polite — no filler, no over-explaining.
+- See **Message Length & Tone** above for length and style rules.
 - For **payment reminders**: frame around project continuity ("to keep things moving smoothly"), not demands. Reference specific deliverables or next steps that depend on the payment.
 - For **scope or timeline discussions**: lead with what's been accomplished, then the constraint, then the ask.
 - If the project file lacks client communication style info, ask Jackie once and update the Client section.
