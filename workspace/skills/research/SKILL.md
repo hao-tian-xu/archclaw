@@ -25,7 +25,8 @@ Scout for competitions, events, and publications relevant to Jackie's active pro
 - [{title}]({url}) — {one-line summary and why it's relevant}
 ```
 
-5. **Notify selectively** — Only message Jackie if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json. When running via cron (no prior user message), translate findings into the user's language preference from `USER.md`. If she's been writing in English this session, keep it in English.
+5. **Notify selectively** — Only message Jackie if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json.
+   - **Language for notifications:** When running via cron (no prior user message), write notifications in Jackie's language preference from `USER.md`. If she's been writing in English this session, keep notifications in English.
 
 ## Guidelines
 
