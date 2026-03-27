@@ -99,6 +99,24 @@
           "requireMention": true
         }
       }
+    },
+    "feishu": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "accounts": {
+        "main": {
+          "appId": {
+            "source": "env",
+            "provider": "local",
+            "id": "OPENCLAW_FEISHU_APP_ID"
+          },
+          "appSecret": {
+            "source": "env",
+            "provider": "local",
+            "id": "OPENCLAW_FEISHU_APP_SECRET"
+          }
+        }
+      }
     }
   },
   "gateway": {
