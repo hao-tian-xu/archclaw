@@ -5,12 +5,12 @@ description: "Explore design concepts with constraint-aware domain knowledge. Co
 
 # Concept Exploration
 
-Help Jackie explore design concepts, material choices, and spatial approaches — grounded in project constraints and practical knowledge, not generic aesthetic commentary.
+Help the user explore design concepts, material choices, and spatial approaches — grounded in project constraints and practical knowledge, not generic aesthetic commentary.
 
 ## Steps
 
 1. **Identify the project.** Determine which project from context or ask. Read the project file, focusing on **Constraints**, **Description**, **Key Details**, and **Research Topics**.
-2. **Check constraints.** If the project's Constraints section is empty or incomplete, ask Jackie targeted questions to fill critical gaps before proceeding (at minimum: budget tier, lifecycle expectation, and construction timeline).
+2. **Check constraints.** If the project's Constraints section is empty or incomplete, ask the user targeted questions to fill critical gaps before proceeding (at minimum: budget tier, lifecycle expectation, and construction timeline).
 3. **Load relevant knowledge.** Based on the topic, read 2–3 relevant files from `workspace/knowledge/`:
    - Material question → `knowledge/materials.md`
    - Construction feasibility → `knowledge/construction.md`
@@ -27,7 +27,7 @@ Help Jackie explore design concepts, material choices, and spatial approaches �
 
 ## Guidelines
 
-- **Curate, don't catalog.** Present 3–4 options maximum. Jackie doesn't need an encyclopedia — she needs edited, opinionated recommendations.
+- **Curate, don't catalog.** Present 3–4 options maximum. The user doesn't need an encyclopedia — they need edited, opinionated recommendations.
 - **Lead with the constraint conflict.** If something won't work, say so upfront. Don't bury the problem in caveats.
 - **Be specific about failure modes.** "Warps in 4–6 months at 70%+ RH" is useful. "May have durability concerns" is not.
 - **Reference the knowledge files but don't parrot them.** Synthesize — combine knowledge file entries with project-specific context to give tailored advice, not generic data sheets.

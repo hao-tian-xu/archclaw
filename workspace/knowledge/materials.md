@@ -1,6 +1,6 @@
 # Materials Knowledge Reference
 
-_Draft — review with Jackie before treating as authoritative._
+_Draft — review with the user before treating as authoritative._
 
 _Opinionated reference for concept exploration. Not exhaustive — focused on failure modes, compatibility, and practical trade-offs relevant to Shanghai-based practice._
 

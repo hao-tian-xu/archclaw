@@ -25,7 +25,7 @@ If all jobs are healthy and nothing else needs attention, reply HEARTBEAT_OK.
 
 The digest skill sends each article as a separate message so IM platforms generate rich link previews per article. The `--announce` delivery path only supports a single summary message, which collapses all articles into one wall of text.
 
-By using `sessionTarget: "main"` with `payload.kind: "systemEvent"`, the cron event is processed during a heartbeat turn where you have full tool access — including the message tool. This lets you send each article individually to Jackie's chat. The main session model (opus) is used automatically; Model/Thinking columns don't apply.
+By using `sessionTarget: "main"` with `payload.kind: "systemEvent"`, the cron event is processed during a heartbeat turn where you have full tool access — including the message tool. This lets you send each article individually to the user's chat. The main session model (opus) is used automatically; Model/Thinking columns don't apply.
 
 When creating this job, set:
 - `sessionTarget: "main"`
@@ -35,4 +35,4 @@ When creating this job, set:
 
 ## Edge Cases
 - If a cron fires during quiet hours, defer the action to the next appropriate window.
-- If a skill fails (e.g., no active projects for `/digest`), log the issue in today's daily memory file but don't alert Jackie unless it's persistent (3+ consecutive failures).
+- If a skill fails (e.g., no active projects for `/digest`), log the issue in today's daily memory file but don't alert the user unless it's persistent (3+ consecutive failures).

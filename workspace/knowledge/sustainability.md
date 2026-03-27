@@ -1,6 +1,6 @@
 # Sustainability Knowledge Reference
 
-_Draft — review with Jackie before treating as authoritative._
+_Draft — review with the user before treating as authoritative._
 
 _Opinionated reference for sustainability-related design decisions. Focused on practical trade-offs, not greenwashing._
 

@@ -1,6 +1,6 @@
 # Retail & Commercial Design Knowledge Reference
 
-_Draft — review with Jackie before treating as authoritative._
+_Draft — review with the user before treating as authoritative._
 
 _Opinionated reference for concept exploration. Focused on practical constraints, feasibility, and trade-offs for retail, F&B, and commercial interior projects._
 

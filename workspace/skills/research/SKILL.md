@@ -5,7 +5,7 @@ description: "Search for architecture competitions, events, publications, and pr
 
 # Supplementary Research
 
-Scout for competitions, events, and publications relevant to Jackie's active projects.
+Scout for competitions, events, and publications relevant to the user's active projects.
 
 ## Steps
 
@@ -25,8 +25,8 @@ Scout for competitions, events, and publications relevant to Jackie's active pro
 - [{title}]({url}) — {one-line summary and why it's relevant}
 ```
 
-5. **Notify selectively** — Only message Jackie if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json.
-   - **Language for notifications:** When running via cron (no prior user message), write notifications in Jackie's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
+5. **Notify selectively** — Only message the user if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json.
+   - **Language for notifications:** When running via cron (no prior user message), write notifications in the user's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
 
 ## Guidelines
 

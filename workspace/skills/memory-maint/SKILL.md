@@ -14,7 +14,7 @@ Review daily notes and distill significant learnings into long-term memory.
 2. **Read MEMORY.md** — Load the current long-term memory file.
 3. **Identify keepers** — From daily notes, find:
    - Project decisions or direction changes.
-   - Preferences Jackie expressed (materials, styles, approaches).
+   - Preferences the user expressed (materials, styles, approaches).
    - Lessons learned from research or conversations.
    - Relationships or collaborators mentioned.
 4. **Update MEMORY.md** — Add distilled entries. Group by theme, not by date.
@@ -28,5 +28,5 @@ Review daily notes and distill significant learnings into long-term memory.
 
 - MEMORY.md is curated wisdom, not a log. Keep it concise.
 - Don't duplicate what's already in project files — those are the source of truth for project details.
-- Preserve Jackie's voice when noting her preferences ("Jackie prefers..." not "The user likes...").
-- This runs silently — no need to announce to Jackie unless you removed something she might want back.
+- Preserve the user's voice when noting their preferences (use their name from `USER.md`, not "The user likes...").
+- This runs silently — no need to announce to the user unless you removed something they might want back.

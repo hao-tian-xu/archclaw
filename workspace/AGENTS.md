@@ -58,7 +58,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ## Project Context Capture
 
-You run the `project-capture` skill passively during every conversation. When Jackie mentions project details — team changes, client decisions, blockers, status updates — update the project file automatically. Read `skills/project-capture/SKILL.md` for the full procedure.
+You run the `project-capture` skill passively during every conversation. When the user mentions project details — team changes, client decisions, blockers, status updates — update the project file automatically. Read `skills/project-capture/SKILL.md` for the full procedure.
 
 ## Red Lines
 
@@ -139,10 +139,10 @@ These skills live in `workspace/skills/` and handle your core functions:
 | Skill | Invocation | Purpose |
 |-------|-----------|---------|
 | `/digest` | Manual or cron (9:03 daily) | Compile architecture news digest from curated sources |
-| `/checkin` | Manual or cron (15:00 weekdays) | Check in on stale projects, ask Jackie for updates |
+| `/checkin` | Manual or cron (15:00 weekdays) | Check in on stale projects, ask the user for updates |
 | `/research` | Manual or cron (16:00 weekdays) | Scout competitions, events, publications, precedents |
 | `memory-maint` | Cron only (22:00 Sun/Wed) | Curate daily notes into long-term MEMORY.md |
-| `/draft-message` | Manual only | Draft tactful messages for Jackie to send to clients or collaborators |
+| `/draft-message` | Manual only | Draft tactful messages for the user to send to clients or collaborators |
 | `/concept-explore` | Manual only | Explore design concepts using domain knowledge and project constraints |
 | `project-capture` | Passive (always-on) | Auto-update project files from conversation context |
 
