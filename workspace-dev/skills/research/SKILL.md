@@ -28,6 +28,19 @@ Scout for competitions, events, and publications relevant to the user's active p
 
 5. **Notify selectively** — Only message the user if something is noteworthy (upcoming deadline, highly relevant precedent). Otherwise, log silently and update `cronJobs.research.lastRun` in heartbeat-state.json.
    - **Language for notifications:** When running via cron (no prior user message), write notifications in the user's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
+   - **Notification format** — Keep it clean and structured (see SOUL.md § Message Aesthetics). For competition deadlines:
+     ```
+     {Competition Name} — deadline {YYYY-MM-DD}
+     {One line on relevance to their project}
+     https://competition-url
+     ```
+     For notable precedents or publications:
+     ```
+     {Title} — {author/firm if notable}
+     {One line on why it's relevant}
+     https://url
+     ```
+     No emoji. No exclamation marks. Let the content speak.
 
 ## Guidelines
 

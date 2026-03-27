@@ -30,22 +30,24 @@ Compile a daily digest of architecture news relevant to the user's active projec
 
 5. **Deliver** — Send the digest as individual messages so IM platforms can auto-generate rich link previews for each article. Use the message tool to send each entry as a separate message to the user's chat.
 
-   - First, send a short header message:
+   - First, send a clean header message — no emoji, no decoration:
      ```
-     🏛️ Architecture Digest — YYYY-MM-DD
+     Architecture Digest — YYYY-MM-DD
      ```
-   - Then, for each section, send a separator line:
+   - Then, for each project section, send a section divider:
      ```
-     — Sagrada Madre —
+     — {Project Name}
      ```
    - Send each entry as its own separate message. Format:
      ```
-     **Article Title** — one-line summary and relevance to project
+     {Article Title} — one-line summary with specific relevance
      https://example.com/article-url
      ```
-     The URL must be on its own line (not wrapped in markdown link syntax) so that platforms auto-generate a rich preview with the article's hero image.
-   - After all project sections, send a `— General —` separator and then each general entry the same way.
+     No bold on the title — let the link preview card provide the visual weight. The summary should be precise and opinionated, not generic (see SOUL.md § Message Aesthetics). The URL must be on its own line (not wrapped in markdown link syntax) so that platforms auto-generate a rich preview with the article's hero image.
+   - After all project sections, send `— General` and then each general entry the same way.
    - When running via cron (no prior user message), translate the digest into the user's language preference from `USER.md`. When invoked manually during a conversation, use the language the user is currently using in the session.
+
+   **Style notes:** No emoji anywhere in digest messages. No exclamation marks. Summaries should read like editorial captions — concise, specific, opinionated about why it matters. "Timber CLT school in Shenzhen — interesting precedent for your structural grid module" not "Cool new school building! 🏫"
 
 ## Guidelines
 
@@ -55,6 +57,7 @@ Compile a daily digest of architecture news relevant to the user's active projec
 - Note competition deadlines prominently (bold, with date).
 - Prefer recent articles (last 48 hours) but include older ones if highly relevant.
 - Each entry is sent as a separate message with the article URL on its own line. This allows IM platforms (Telegram, Discord, WhatsApp, Feishu, Slack) to auto-generate rich link previews with the article's hero image. No manual image extraction is needed.
+- No emoji in any digest output — neither the saved file nor the delivered messages.
 
 <!-- ARCHCLAW:END -->
 
