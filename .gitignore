@@ -20,8 +20,12 @@ completions/
 canvas/
 
 # Workspace internal state
-workspace/.openclaw/
-workspace/.git/
+workspace-dev/.openclaw/
+workspace-dev/.git/
+
+# User workspaces (created from template, not tracked)
+workspace-*/
+!workspace-dev/
 
 # OS artifacts
 .DS_Store

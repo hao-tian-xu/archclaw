@@ -39,8 +39,10 @@
         "anthropic/claude-opus-4-6": {}
       },
       "workspace": "/home/ubuntu/.openclaw/workspace"
-    }
+    },
+    "list": []
   },
+  "bindings": [],
   "tools": {
     "profile": "coding",
     "web": {
