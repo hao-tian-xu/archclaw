@@ -1,5 +1,5 @@
 ---
-name: architect-assistant
+name: architect
 description: "Architecture personal assistant — daily news digests, project tracking, research scouting, design concept exploration, client message drafting, and passive project context capture. Designed for independent architects working on commercial, retail, F&B, and institutional projects."
 ---
 
@@ -18,7 +18,7 @@ On first invocation, check if `workspace/projects/README.md` exists and has any 
 5. **Enable passive behaviors** — Open `workspace/AGENTS.md` (create if it doesn't exist) and append the following directive if not already present:
    ```
    ## Project Context Capture
-   You run the `architect-assistant` skill's project-capture behavior passively during every conversation. When the user mentions project details — team changes, client decisions, blockers, status updates — read the architect-assistant SKILL.md and follow the "Project Context Capture" section to update the project file automatically.
+   You run the `architect` skill's project-capture behavior passively during every conversation. When the user mentions project details — team changes, client decisions, blockers, status updates — read the architect SKILL.md and follow the "Project Context Capture" section to update the project file automatically.
    ```
 6. **Cron setup** — Set up the recommended cron schedule (see Cron Schedule section below).
 7. **First digest** — Run an initial research pass on their projects and deliver a quick digest.
